@@ -24,6 +24,9 @@
     nav span{
         display:block;
     }
+    nav ion-icon{
+        font-size:5vw;
+    }
     .main-text-container h1{
         font-size:10.3vw;
         text-align:center;
@@ -69,6 +72,18 @@
         height:15vh;
         margin-top: 20vh;
         color:white;
+        display: flex;
+        align-items: center;
+        padding:0 8% 0 8%;
+        box-sizing: border-box;
+        justify-content:space-around;
+
+    }
+    footer span ion-icon{
+        font-size:5vw;
+        margin:0 auto;
+        color:white;
+
     }
     
 }

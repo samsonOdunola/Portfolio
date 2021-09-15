@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="responsive.css"> 
+</head>
+<body>
+    <di v class="menu" id="menu">
+        <div class="menu-header">
+            <a href="homepage.html" style="display:none"><p id="logo" class="logo">Samson.Odunola</p></a>
+            <img id="close-btn" src="images/icon-close.svg" alt="close-button">
+        </div>
+        <div class="dev-tools section" id ="devTools">
+            <h3 class="menu-head">My Dev Tools</h3>
+            <div class = tools-icon>
+                <a href="#" id="javaScript"><img src="images/icons8-javascript.svg" alt=""><p>javaScript</p></a>
+                <a href="#" id="css"><img src="images/icons8-css3 (1).svg" alt="" srcset=""><p>CSS</p></a>
+                <a href="#" id="react"><img src="images/icons8-react (1).svg" alt="react-icon" ><p>React</p></a>
+                <a href="#" id="flutter"><img src="images/icons8-flutter.svg" alt="flutter-icon"><p>Flutter</p></a>
+                <a href="#" id="html"><img src="images/icons8-html-5.svg" alt="html-icon"><p>HTML</p></a>
+            </div>                  
+        </div>
+        <div class ="contact section" id ="contact">
+            <h3>Reach out to me</h3>
+            <div class="email"><ion-icon name="mail-outline"></ion-icon><span>odunolasamson@yahoo.com</span></div>
+            <div class="phone"><ion-icon name="call-outline"></ion-icon><span>+234 810 847 6499</span></div>
+        </div>
+        <div class="other-profiles section" id ="otherProfiles">
+            <h3>My other Profiles</h3>
+            <div class="social-icons">
+                <a href="" id="facebook"><img src="images/icon-facebook.svg" alt="facebook-icon"><p>Facebook</p></a>
+                <a href="" id="twitter"><img src="images/icon-twitter.svg" alt="twitter-icon"><p>Twitter</p></a>
+                <a href="" id="github"><ion-icon name="logo-github"></ion-icon><p>Github</p></a>
+                <a href="" id ="linkedin"><ion-icon name="logo-linkedin"></ion-icon><p>LinkedIn</p></a>
+            </div>
+        </div>
+    </di>
+    <main>
+        <nav id="navBar" class ="navBar">
+            <a href="homepage.html"><p id="logo" class="logo">Samson.Odunola</p></a>
+            <button>About Me</button>
+            <span><ion-icon name="menu-outline"></ion-icon></span>
+        </nav>        
+        <div class="main-text-container">
+            <h1 id="webDeveloper" class="main-text" style="display:block">Web-Developer<span>.</span></h1>
+            <h1 id="uiuxDesigner" class="main-text"style="display:block">UI/UX Designer<span>.</span></h1>
+            <p id="subhead">Let's collaborate on your next project</p>
+        </div>
+        <div class="column-container">
+            <div class= "col col-1" id ="webDev" style="display:block">
+                <a href="homepage.html"id="backBtn">Back</a>
+                <div class="col-header" id="webDevHeader">
+                    <h2>Web-Developer <span class="forward-icon"><ion-icon name="chevron-forward-outline"></ion-icon></span></h2>
+                    <button class="explore-btn btn">Explore</button>
+                </div>
+                <p class="summary">I Build  powerfull and dynamic websites using Latest industry tools.
+                    I enjoy building projects from scratch, the process 
+                    of taking an idea from concept to reality is always a thrill for me.
+                </p>
+                <div class="grid">
+                    <div class="tile" id="tile-1">
+                        <img src="images/loopstudio/logo.svg" alt="" class="main logo">
+                        <p class="reverse text">Immersive virtual reality gaming experience like never before.</p>
+                        <a class="reverse btn"href="http://" target="_blank">Visit Website</a>                        
+                    </div> 
+                    <div class="tile" id="tile-2">
+                        <img class="main logo" src="images/Red-store/logo-white.png"></img>
+                        <p class="reverse text">Your one stop shop for all your athletic needs.</p>
+                        <a  class="reverse btn"href="#" target="-blank">Visit Website</a>
+                    </div> 
+                    <div class="tile" id="tile-3">
+                        <img class="main logo">Insert Logo here</img>
+                        <p class="reverse text">details</p>
+                        <a  class="reverse btn"href="#" target="-blank">Visit Website</a>
+                    </div>                                          
+                </div>
+                <div class="grid grid-2">
+                    <div class="tile" id="tile-4">
+                        <img class="main logo">Insert Logo here</img>
+                        <p class="reverse text">details</p>
+                        <a  class="reverse btn"href="#" target="-blank">Visit Website</a>
+                    </div> 
+                    <div class="tile" id="tile-5">
+                        <img class="main logo">Insert Logo here</img>
+                        <p class="reverse text">details</p>
+                        <a  class="reverse btn"href="#" target="-blank">Visit Website</a>
+                    </div> 
+                    <div class="tile" id="tile-6">
+                        <img class="main logo">Insert Logo here</img>
+                        <p class="reverse text">details</p>
+                        <a  class="reverse btn"href="#" target="-blank">Visit Website</a>
+                    </div>                                          
+                </div>
+            </div>
+            <div class= "col col-2" id ="Designer" style="display:block">
+                <a href="homepage.html"id="backBtn">Back</a>
+                <div class="col-header" id="designerHeader"> 
+                    <h2>Designer<span><ion-icon name="chevron-forward-outline"></ion-icon></span></h2>
+                    <button class="explore-btn">Explore</button>
+                </div>
+                <p>I design clean and minimalistic user interface. My design ideology is to give more
+                    focus to the content by removing unnecessary designs.
+                </p>
+            </div>
+            <div class= "col col-3" id ="flutterDev" style="display:block">
+                <a href="homepage.html"id="backBtn">Back</a>
+                <div class="col-header" id="flutterDevHeader">
+                    <h2>App Developer<span><ion-icon name="chevron-forward-outline"></ion-icon></span></h2>
+                    <button class="explore-btn">Explore</button>
+                </div>
+                <p>Coming soon.</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <span><ion-icon name="logo-facebook"></ion-icon></span>
+        <span><ion-icon name="logo-linkedin"></ion-icon></span>
+        <span><ion-icon name="logo-twitter"></ion-icon></span>
+    </footer>
+    
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>    
+</body>
+</html>

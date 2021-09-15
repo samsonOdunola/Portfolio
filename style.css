@@ -1,0 +1,316 @@
+body{
+    padding:0;
+    margin:0;
+    font-family:"Poppins";    
+}
+h1, h2, p{
+    margin:0;
+}
+main{
+    background:url(images/main\ background\ spalsh.jpg), hsla(0, 0%, 100%, 0.63);
+    background-blend-mode: overlay;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center;
+    height:100vh;
+    padding:2% 5% 2% 5%;
+    width:auto;
+    box-sizing: border-box; 
+    position:relative;
+    z-index:0;
+}
+/* ***********side menu style************ */
+.menu{
+    position:absolute;
+    z-index:1;
+    right:0;
+    top:0;
+    background-color: rgb(0, 0, 0);    
+    width:30%;    
+    margin:0% 5% 0% 0%;  
+    box-sizing:border-box;
+    padding:2% 3% 2% 3%;
+    display:none;     
+}
+.menu-header{
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    margin-bottom:5vh;
+}
+.menu-header img{    
+    color:white;
+    cursor:pointer;
+    width:3
+    5%;
+}
+.menu .section{
+    color:white;
+    font-family:"josefin Sans";
+    font-weight:300;
+    margin-bottom:5vh;
+}
+.menu .section h3{
+    border-bottom:1px white solid;
+    padding-bottom:3vh;
+    font-family: josefin Sans;
+    font-weight:200;
+}
+.menu .section .tools-icon{
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    flex-wrap:wrap;    
+}
+#react img{
+    width:125%;
+}
+.menu .section .tools-icon a{
+    text-align: center;
+    text-decoration: none;     
+}
+
+.menu .section .tools-icon a p{
+    color:white;
+}
+.menu .contact div{
+    display:flex;
+    align-items: center;
+    margin-bottom:4vh;
+}
+.menu .contact ion-icon{
+    margin-right:1vw;
+    font-size: 2vw;
+}
+.menu .other-profiles .social-icons{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align: center;
+}
+.menu .other-profiles .social-icons a{
+    text-decoration: none;
+    color:white;
+}
+.menu .other-profiles .social-icons a img{
+    width:1.8vw;
+    margin-bottom:1vh;
+}
+.menu .other-profiles .social-icons a ion-icon{
+    font-size:1.8vw;
+    margin-bottom:1vh;
+}
+/* ***************Nav Bar*********** */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+}
+nav p{
+    margin:0;
+    font-weight:800;    
+    font-size:1.8vw;
+    cursor:pointer;
+    box-sizing:border-box;
+    padding:0;
+}
+nav a{
+    text-decoration: none;
+    color:black;
+    letter-spacing:-2.5%;
+}
+nav button{
+    background-color:black;
+    color:white;
+    border-style: none;  
+    font-size:1vw;  
+    font-weight:100;
+    padding:0.5% 2%;
+    cursor:pointer;
+}
+nav span{
+    display:none;
+}
+/********* hero section style********* */
+.main-text-container{
+    margin-top:3%;
+    height:fit-content;
+}
+.main-text-container h1{
+    font-size: 5vw;
+}
+.main-text-container p{
+    text-transform: uppercase;
+    letter-spacing:0.4vw;
+    color:#D10000;
+    font-size: 1vw;
+}
+/* ******categories column******** */
+.column-container{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    margin-top:12vh;
+}
+.col-header{
+    display:flex;
+    text-align:left;
+    justify-content:space-between;
+    align-items:flex-start;
+    box-sizing: border-box; 
+    border-bottom:1px #238CD3 solid;
+    padding-bottom:3vh;
+    margin-bottom:3vh; 
+    cursor:pointer;  
+    position:relative;    
+}
+.col-header::before{
+    content:"";
+    position:absolute;
+    top:1;
+    right:0;
+    left:0;
+    bottom:0;
+    background:#238CD3;
+    width:0%;
+    height:4%;      
+    transition: width 500ms;
+}
+.col-header:hover::before{    
+    width:100%;    
+}
+.col p{
+    font-size:1vw;
+}
+
+.col-header h2{
+    font-family:"josefin Sans";
+    font-size:2vw;
+    font-weight:500;
+    align-items:flex-start;
+    display:flex;
+    color:#238CD3;
+}
+.col-header ion-icon{
+    width:100%;
+    margin-left:1vw;
+}
+.column-container button{
+    display:block;
+    border-style: none;
+    color:white;
+    font-family:"josefin Sans";
+    font-weight:300;
+    background-color:#238CD3;
+    padding:1% 5%;
+}
+.column-container .explore-btn{    
+    opacity:0;
+    transition: opacity 500ms;
+}
+#backBtn{    
+    margin-bottom: 3vh;
+    margin-right:0;
+    text-transform: uppercase;
+    font-size:1vw;
+    padding:1vh 2vw;    
+    opacity: 1;
+    display:none;
+    text-decoration: none;
+    background-color:#238CD3;
+    color:white;
+    width:fit-content;
+}
+col a{
+    text-decoration: none;
+}
+.col-header:hover button{
+   opacity:1;
+}
+.column-container .col{
+    width:30%;
+    box-sizing:border-box;
+}
+/*********grid style***************/
+.grid{
+    display:none;    
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.grid-2{
+    margin-top:2vh;
+}
+.tile{
+    background-color: hsla(0, 1%, 81%, 0.568);
+    flex-basis:32.5%;   
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    height:23vh;
+    position:relative;
+}
+.tile .reverse{
+    display:none;
+}
+.tile:hover .reverse{
+    display:block;
+}
+.tile:hover .main{
+    display:none;
+}
+.grid a{
+    color:white;
+    text-decoration: none;
+    font-family:"josefin sans";  
+    font-weight:400;  
+}
+.grid .text{
+    width:50%;
+    color:white;
+    font-size: 1.3vw;
+    text-align:center;
+    font-family:"josefin sans";
+}
+.grid .btn{
+    border-radius:2vh;
+    padding:1vh 2vh;
+    width:10vw;
+    font-size:2.5vh;
+    font-weight:600;
+    background-color:transparent;
+    border:.1vw solid #636ECA;
+    text-align:center;
+
+}
+.grid .btn:hover{
+    background-color:#636ECA;
+    transition: background 300ms;
+}
+
+/* **********individual tiles*************** */
+#tile-1{
+    background:url(images/loopstudio/virtual\ reality.jpg),hsl(337, 79%, 33%);
+    background-blend-mode: overlay;
+    width:100%;
+    background-position: center;     
+       
+}
+#tile-1:hover{
+    background:#000A60;    
+}
+#tile-2{
+    background:url(images/Red-store/shopping\ image.jpg),hsl(194, 97%, 38%);
+    background-blend-mode: overlay;
+    width:100%;
+    background-position: center;     
+       
+}
+#tile-2:hover{
+    background:#b60079;    
+}
+footer{
+    display:none;
+}
+
+

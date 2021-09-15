@@ -1,16 +1,15 @@
 @media (max-width:475px){
-    main{
-        background:url(images/main\ background\ spalsh.jpg)linear-gradient(from bottom to top, rgb(255, 255, 255), transparent);
+    body{
+        background:url(images/main\ background\ spalsh.jpg), linear-gradient(to top, white,rgba(255, 255, 255, 0.904),rgba(255, 255, 255, 0.925), transparent);
         background-blend-mode: overlay;
-        background-size:contain;
-        background-repeat:no-repeat;
-        background-position:top;
+        background-size:cover;
+        background-position:center;
+    }
+    main{
+        background:none;        
         padding:7% 6% 2% 6%;
         height:auto;        
-        width:auto;
-        box-sizing: border-box; 
-        /* position:relative; */
-        z-index:0;
+        width:auto;        
     }
     nav{
         margin-bottom:3vh;

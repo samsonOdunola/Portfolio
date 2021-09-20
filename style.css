@@ -30,7 +30,7 @@ main{
     margin:0% 5% 0% 0%;  
     box-sizing:border-box;
     padding:2% 3% 2% 3%;
-    display:none;     
+    ;     
 }
 .menu-header{
     display:flex;
@@ -128,7 +128,7 @@ nav button{
     padding:0.5% 2%;
     cursor:pointer;
 }
-nav span{
+nav #mobileMenuBtn{
     display:none;
 }
 /********* hero section style********* */

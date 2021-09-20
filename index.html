@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="responsive.css"> 
 </head>
 <body>
-    <di v class="menu" id="menu">
+    <div class="menu" id="menu" style="display:none">
         <div class="menu-header">
             <a href="index.html" style="display:none"><p id="logo" class="logo">Samson.Odunola</p></a>
             <img id="close-btn" src="images/icon-close.svg" alt="close-button">
@@ -38,12 +38,23 @@
                 <a href="" id ="linkedin"><ion-icon name="logo-linkedin"></ion-icon><p>LinkedIn</p></a>
             </div>
         </div>
-    </di>
+    </div>
     <main>
         <nav id="navBar" class ="navBar">
-            <a href="index.html"><p id="logo" class="logo">Samson.Odunola</p></a>
-            <button>About Me</button>
-            <span><ion-icon name="menu-outline"></ion-icon></span>
+            <div class="mobile-menu" style="display:none" id="mobileMenu">
+                <div class="mobile-menu-header">
+                    <a href="index.html"><p id="mobile-logo" class="logo">Samson.Odunola</p></a>
+                    <img id="closeBtn" src="images/icon-close.svg" alt="">                    
+                </div>
+                <ul>
+                    <li><a href="">Contact</a></li>
+                    <li><a href="">My Tools</a></li>
+                    <li><a href="">Blank for now</a></li>
+                </ul>                
+            </div>
+            <a href="index.html"><p class="logo" id="mainLogo" style="display:block">Samson.Odunola</p></a>
+            <button id="aboutMeBtn">About Me</button>
+            <span id="mobileMenuBtn" ><ion-icon name="menu-outline"></ion-icon></span>
         </nav>        
         <div class="main-text-container">
             <h1 id="webDeveloper" class="main-text" style="display:block">Web-Developer<span>.</span></h1>
@@ -117,7 +128,7 @@
         </div>
     </main>
     <footer>
-        <a href="http://"><span><ion-icon name="logo-facebook"></ion-icon></span></a>
+        <a href="http:/https://web.facebook.com/adejola.odunola//"><span><ion-icon name="logo-facebook"></ion-icon></span></a>
         <a href="http://"><span><ion-icon name="logo-linkedin"></ion-icon></span></a>
         <a href="http://"><span><ion-icon name="logo-twitter"></ion-icon></span></a>
     </footer>
@@ -128,10 +139,10 @@
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/CSSRulePlugin.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
     <script src="script.js"></script>    
 </body>
 </html>

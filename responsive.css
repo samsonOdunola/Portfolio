@@ -1,6 +1,6 @@
 @media (max-width:475px){
     body{
-        background:url(images/main\ background\ spalsh.jpg), linear-gradient(to top, white,rgba(255, 255, 255, 0.904),rgba(255, 255, 255, 0.925), transparent);
+        background:url(images/main\ background\ spalsh.jpg), linear-gradient(to top, white,rgba(255, 255, 255, 0.925),rgba(255, 255, 255, 0.9), transparent);
         background-blend-mode: overlay;
         background-size:cover;
         background-position:center;
@@ -14,15 +14,52 @@
     nav{
         margin-bottom:3vh;
     }
+    nav #logo{
+        display:block;
+    }
     nav button{
         display:none;
+    }    
+    nav #mobileMenuBtn{
+        display:block;
+    }
+    nav .mobile-menu{
+        display:none;
+        background-color: black;
+        color:white;
+        width:100%;
+        padding:2vh 2vw;        
+    }
+    nav #mobile-logo{
+        color:white;        
+    }
+    nav .mobile-menu-header{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        margin-bottom:4vh;
+    }
+    
+    nav .mobile-menu ul{
+        margin:0;
+        list-style-type:none;
+        padding:0;        
+        
+    }
+    nav .mobile-menu ul li a{
+        color:white;
+        font-family: "josefin sans";
+        font-size:6vw;
+        font-weight:100;                
+    }
+    nav .mobile-menu ul li{
+        margin-bottom:4vh;
+        padding-bottom:2vh;       
     }
     nav p{
         font-size:4.8vw;        
     }
-    nav span{
-        display:block;
-    }
+    
     nav ion-icon{
         font-size:5vw;        
     }
@@ -76,7 +113,7 @@
         color:white;
         display: flex;
         align-items: center;
-        padding:10% 30%;
+        padding:5% 30%;
         box-sizing: border-box;
         justify-content:space-between;
     }

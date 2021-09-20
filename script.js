@@ -1,6 +1,6 @@
-// gsap.registerPlugin(CSSRule);
+gsap.registerPlugin(CSSRule);
 var sectionHead = document.getElementsByClassName("col-header");
-// let rule = CSSRulePlugin.getRule(".col-header::before");
+let rule = CSSRulePlugin.getRule(".col-header::before");
 var webDesignHead = document.getElementById("Designer");
 var WebDevHeader = document.getElementById("webDev")
 var appCol = document.getElementById("flutterDev")

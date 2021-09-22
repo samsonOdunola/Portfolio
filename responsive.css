@@ -1,6 +1,6 @@
 @media (max-width:475px){
     body{
-        background:url(images/main\ background\ spalsh.jpg), linear-gradient(to top, white,rgba(255, 255, 255, 0.925),rgba(255, 255, 255, 0.9), transparent);
+        background:url(images/main\ background\ spalsh.jpg), linear-gradient(to top, white,rgba(255, 255, 255, 0.671), transparent);
         background-blend-mode: overlay;
         background-size:cover;
         background-position:center;
@@ -24,11 +24,16 @@
         display:block;
     }
     nav .mobile-menu{
-        display:none;
+        /* display:none; */
+        position:absolute;
+        top:0;
+        right:0;
         background-color: black;
         color:white;
         width:100%;
-        padding:2vh 2vw;        
+        padding:7% 6% 2% 6%;
+        box-sizing: border-box;
+        z-index:2;
     }
     nav #mobile-logo{
         color:white;        
@@ -48,9 +53,10 @@
     }
     nav .mobile-menu ul li a{
         color:white;
-        font-family: "josefin sans";
-        font-size:6vw;
-        font-weight:100;                
+        font-family: "poppins";
+        font-size:3.5vw;
+        font-weight:300;     
+        border-bottom:3px rgb(73, 91, 253) solid;           
     }
     nav .mobile-menu ul li{
         margin-bottom:4vh;
@@ -120,6 +126,27 @@
     footer span ion-icon{  
         font-size:3.3vh;      
         color:white;
+    }
+    .col p{
+        text-align:center;
+    }
+    /* grid */
+    .grid{
+        display:block;    
+        justify-content:space-between;
+        flex-wrap:wrap;
+    }
+    .tile{
+        margin:3vh 0;
+        border-radius:1.6vw;
+    }
+    .grid .text{
+        width:70%;
+        font-size:3vw;
+    }
+    .grid .btn{
+        width:30vw;
+        background-color: #636ECA;
     }
     
 }

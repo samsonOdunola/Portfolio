@@ -10,35 +10,64 @@
 </head>
 <body>
     <div class="menu" id="menu" style="display:none">
-        <div class="menu-header">
+        <div class="menu-header" style="display:none">
             <a href="index.html" style="display:none"><p id="logo" class="logo">Samson.Odunola</p></a>
             <img id="close-btn" src="images/icon-close.svg" alt="close-button">
         </div>
-        <div class="dev-tools section" id ="devTools">
-            <h3 class="menu-head">My Dev Tools</h3>
-            <div class = tools-icon>
-                <a href="#" id="javaScript"><img src="images/icons8-javascript.svg" alt=""><p>javaScript</p></a>
-                <a href="#" id="css"><img src="images/icons8-css3 (1).svg" alt="" srcset=""><p>CSS</p></a>
-                <a href="#" id="react"><img src="images/icons8-react (1).svg" alt="react-icon" ><p>React</p></a>
-                <a href="#" id="flutter"><img src="images/icons8-flutter.svg" alt="flutter-icon"><p>Flutter</p></a>
-                <a href="#" id="html"><img src="images/icons8-html-5.svg" alt="html-icon"><p>HTML</p></a>
-            </div>                  
-        </div>
-        <div class ="contact section" id ="contact">
-            <h3>Reach out to me</h3>
-            <div class="email"><ion-icon name="mail-outline"></ion-icon><span>odunolasamson@yahoo.com</span></div>
-            <div class="phone"><ion-icon name="call-outline"></ion-icon><span>+234 810 847 6499</span></div>
-        </div>
-        <div class="other-profiles section" id ="otherProfiles">
-            <h3>My other Profiles</h3>
-            <div class="social-icons">
-                <a href="" id="facebook"><img src="images/icon-facebook.svg" alt="facebook-icon"><p>Facebook</p></a>
-                <a href="" id="twitter"><img src="images/icon-twitter.svg" alt="twitter-icon"><p>Twitter</p></a>
-                <a href="" id="github"><ion-icon name="logo-github"></ion-icon><p>Github</p></a>
-                <a href="" id ="linkedin"><ion-icon name="logo-linkedin"></ion-icon><p>LinkedIn</p></a>
+        <div class="info-container" style="display:none">
+            <div class="tools floating-menu-col">
+                <div class="dev-tools section" id ="devTools">
+                    <h3 class="menu-head">Dev Tools</h3>
+                    <ul>
+                        <li>javaScript</li>
+                        <li>CSS</li>
+                        <li>HTML</li>
+                        <li>Gsap</li>
+                        <li>React</li>
+                        <li>Flutter</li>
+                    </ul>                  
+                </div>
+                <div id="designTools">
+                    <h3 class="menu-head">Design Tools</h3>
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="others floating-menu-col">
+                <div class= "completed section" id="completedCourses">
+                    <h3 class="menu-head">Completed Courses</h3>
+                    <ul>
+                        <a href="https://freecodecamp.org/certification/samson-jola/responsive-web-design" target="_blank" rel="noopener noreferrer">FreeCodeCamp Responsive Web Design Course</a>                
+                    </ul> 
+                </div>        
+                <div class ="contact section" id ="contact">
+                    <h3 class="menu-head">Contact</h3>
+                    <ul>
+                        <li>samsonodunola@yahoo.com</li>
+                        <li>+234 810 847 6499</li>
+                    </ul>            
+                </div>
+            </div> 
+            <div class="big-text">
+                <h3 class="menu-head">Links</h3>
+                <UL>
+                    <a href="#">Lets Work Together</a>
+                </UL>
+                
+            </div>       
+            <div class="other-profiles section" id ="otherProfiles">
+                <ul>
+                    <a href="https://web.facebook.com/adejola.odunola/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://github.com/samsonOdunola" target="_blank"><ion-icon name="logo-github"></ion-icon></a>
+                    <a href="https://www.linkedin.com/in/samson-odunola-25171780/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter" target="_blank"></ion-icon></a>
+                    <li></li>
+                </ul>
             </div>
         </div>
-    </div>
+    </div>        
     <main>
         <nav id="navBar" class ="navBar">
             <div class="mobile-menu" style="display:none" id="mobileMenu">
@@ -47,9 +76,11 @@
                     <img id="closeBtn" src="images/icon-close.svg" alt="">                    
                 </div>
                 <ul>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">My Tools</a></li>
-                    <li><a href="">Blank for now</a></li>
+                    <li><a href="#">Bio</a></li>
+                    <li><a href="#">My Dev Tools</a></li>
+                    <li><a href="#">My Projects</a></li>
+                    <li><a href="#">Completed Courses</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>                
             </div>
             <a href="index.html"><p class="logo" id="mainLogo" style="display:block">Samson.Odunola</p></a>

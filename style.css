@@ -23,83 +23,99 @@ main{
 .menu{
     position:absolute;
     z-index:1;
-    right:0;
+    right:0;    
     top:0;
-    background-color: rgb(0, 0, 0);    
-    width:30%;    
-    margin:0% 5% 0% 0%;  
-    box-sizing:border-box;
-    padding:2% 3% 2% 3%;
-    ;     
+    background-color: black;    
+    width:0%;    
+    margin:0%;  
+    height:100%;
+    box-sizing:border-box;    
 }
 .menu-header{
     display:flex;
+    padding:5vh 3vw 0 5vw;
     align-items:flex-start;
-    justify-content: space-between;
-    margin-bottom:5vh;
+    justify-content: space-between;    
 }
+
 .menu-header img{    
     color:white;
     cursor:pointer;
     width:3
     5%;
 }
-.menu .section{
-    color:white;
-    font-family:"josefin Sans";
-    font-weight:300;
-    margin-bottom:5vh;
-}
-.menu .section h3{
-    border-bottom:1px white solid;
-    padding-bottom:3vh;
-    font-family: josefin Sans;
-    font-weight:200;
-}
-.menu .section .tools-icon{
-    display:flex;
-    justify-content: space-between;
-    align-items:flex-start;
-    flex-wrap:wrap;    
-}
-#react img{
-    width:125%;
-}
-.menu .section .tools-icon a{
-    text-align: center;
-    text-decoration: none;     
-}
-
-.menu .section .tools-icon a p{
-    color:white;
-}
-.menu .contact div{
-    display:flex;
-    align-items: center;
-    margin-bottom:4vh;
-}
-.menu .contact ion-icon{
-    margin-right:1vw;
-    font-size: 2vw;
-}
-.menu .other-profiles .social-icons{
+.info-container{
     display:flex;
     justify-content:space-between;
-    align-items:center;
-    text-align: center;
+    padding:5vh 3vw 0 5vw;
+    text-align:left;
+    color:rgb(170, 170, 170);
+    align-items: flex-start;
+    opacity:0;
+    transform: scale(0.8);
 }
-.menu .other-profiles .social-icons a{
-    text-decoration: none;
+.info-container ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+.info-container ul li{
+    font-weight:300;
+    margin-bottom: 2vh;
+}
+.info-container .completed a{
+    text-decoration:none;
+    color:white;    
+}
+.info-container .completed a:hover{
+    color:rgb(170, 170, 170);    
+}
+.info-container h3{
+    margin:0;
+    margin-bottom:1vh;
+    color:hsl(204, 72%, 70%);
+    font-size:1vw;
+    font-weight:500;
+    text-transform: uppercase;
+}
+.info-container .dev-tools{
+    margin-bottom: 10vh;
+}
+.info-container .completed{
+    margin-bottom: 5vh;
+}
+.other-profiles ul{
+    display:flex;
+    flex-direction: column;
+    font-size: 1.5vw;
+}
+.other-profiles a{
+    text-decoration:none;
     color:white;
 }
-.menu .other-profiles .social-icons a img{
-    width:1.8vw;
-    margin-bottom:1vh;
+.big-text a{
+    text-decoration: none;
+    color:white;
+    font-size:3vw;
+    font-weight:200;
 }
-.menu .other-profiles .social-icons a ion-icon{
-    font-size:1.8vw;
-    margin-bottom:1vh;
+.info-container .big-text a:hover{
+    color:rgb(170, 170, 170);
 }
+.info-container .other-profiles{
+    margin-top:30vh;
+}
+.info-container .other-profiles a{
+    align-self: center;
+    color:white;
+    margin:3vh 0;    
+    transition:transform 300ms;
+}
+.info-container .other-profiles a:hover{
+    transform:scale(1.7);
+}
+
+
 /* ***************Nav Bar*********** */
 nav{
     display:flex;
@@ -120,13 +136,18 @@ nav a{
     letter-spacing:-2.5%;
 }
 nav button{
-    background-color:black;
-    color:white;
-    border-style: none;  
+    background-color:transparent;
+    color:black;
+    font-family:"poppins";      
     font-size:1vw;  
-    font-weight:100;
+    font-weight:500;
     padding:0.5% 2%;
     cursor:pointer;
+    border:1px black solid;
+    transition: background-color 500ms;
+}
+nav button:hover{
+    background-color:hsl(0, 0%, 80%);
 }
 nav #mobileMenuBtn{
     display:none;

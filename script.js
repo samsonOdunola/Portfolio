@@ -17,16 +17,30 @@ var floatingMenuCloseBtn = document.getElementById("close-btn")
 
 
 aboutMe.addEventListener("click", function(){
-    console.log("working")    
-    floatingMenu.style.display="block"
+    gsap.to(".menu",{display:"block"}) 
+    gsap.to(".menu",{width:"87.5%", duration:0.5 ,ease: "power4.in"})
+    gsap.to(".menu-header",{display:"block", duration:0, delay:0.5})
+    gsap.to(".info-container",{display:"flex", delay:0.5})
+    gsap.to(".info-container",{opacity:1, delay:0.65})
+    gsap.to(".info-container",{transform:"scale(1)", delay:0.4})
+    
+    
 })
 floatingMenuCloseBtn.addEventListener("click", ()=>{
-    floatingMenu.style.display="none"    
+    gsap.to(".info-container",{opacity:0, delay:0, duration:0.5})
+    gsap.to(".info-container",{display:"none", delay:0.5, duration:0})
+    gsap.to(".menu",{width:"0%", duration:0.5,ease: "power4.in", delay:0.3})
+    gsap.to(".menu",{display:"none", duration:0, delay:0.8})
+    gsap.to(".menu-header",{display:"none", duration:0, delay:0.9})
+    gsap.to(".info-container",{transform:"scale(0.8)", delay:0.1})
+    
+    
+    // gsap.to(".dev-tools",".contact",".other-profiles",{opacity:0, duration:1})
+        
 })
 
 hamburgerMenu.addEventListener("click", function(){
-    this.style.display = "none"
-    mainLogo.style.display ="none"
+    this.style.display = "none"    
     mobileMenu.style.display = "block"
 })
 mobileCloseButton.addEventListener("click", ()=>{

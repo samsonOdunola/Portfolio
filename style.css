@@ -203,6 +203,9 @@ nav #mobileMenuBtn{
 .col p{
     font-size:1vw;
 }
+#mobile-only-text{
+    display:none;
+}   
 
 .col-header h2{
     font-family:"josefin Sans";

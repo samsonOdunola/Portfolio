@@ -13,6 +13,14 @@ var mobileCloseButton = document.getElementById("closeBtn")
 var aboutMe = document.getElementById("aboutMeBtn")
 var floatingMenu = document.getElementById("menu");
 var floatingMenuCloseBtn = document.getElementById("close-btn")
+var mobileBio = document.getElementById("mobile-bio")
+var bioContent=document.getElementById("bio-content")
+var mobileTools=document.getElementById("mobile-tools")
+var toolsContent=document.getElementById("tools--content")
+var mobileCourses=document.getElementById("mobile-courses")
+var coursesContent=document.getElementById("courses-content")
+var mobileContact=document.getElementById("mobile-contact")
+var contactContent=document.getElementById("contact-content")
 
 
 
@@ -33,10 +41,6 @@ floatingMenuCloseBtn.addEventListener("click", ()=>{
     gsap.to(".menu",{display:"none", duration:0, delay:0.8})
     gsap.to(".menu-header",{display:"none", duration:0, delay:0.9})
     gsap.to(".info-container",{transform:"scale(0.8)", delay:0.1})
-    
-    
-    // gsap.to(".dev-tools",".contact",".other-profiles",{opacity:0, duration:1})
-        
 })
 
 hamburgerMenu.addEventListener("click", function(){
@@ -86,7 +90,34 @@ for(var i=0; i<sectionHead.length; i++){
                        
     })    
 };
-
+mobileBio.addEventListener("click", ()=>{    
+    if (bioContent.style.display === "block"){
+        bioContent.style.display = "none";
+    }else{
+        bioContent.style.display="block"
+    }
+})
+mobileTools.addEventListener("click", ()=>{    
+    if (toolsContent.style.display === "block"){
+        toolsContent.style.display = "none";
+    }else{
+        toolsContent.style.display="block"
+    }
+})
+mobileCourses.addEventListener("click", ()=>{    
+    if (coursesContent.style.display === "block"){
+        coursesContent.style.display = "none";
+    }else{
+        coursesContent.style.display="block"
+    }
+})
+mobileContact.addEventListener("click", ()=>{    
+    if (contactContent.style.display === "block"){
+        contactContent.style.display = "none";
+    }else{
+        contactContent.style.display="block"
+    }
+})
 
 
 

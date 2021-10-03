@@ -59,7 +59,8 @@
         border-bottom:3px rgb(73, 91, 253) solid;           
     }
     nav .mobile-menu ul li{
-        margin-bottom:4vh;
+        margin-top:2vh;
+        margin-bottom:3vh;
         padding-bottom:2vh;       
     }
     nav p{
@@ -68,6 +69,16 @@
     
     nav ion-icon{
         font-size:5vw;        
+    }
+    .mobile-menu ul p{
+        font-family: "poppins";
+        font-weight:300;
+        font-size:3.4vw;
+        
+    }
+    .mobile-menu ul p a{
+        color:white;
+        text-decoration:none;
     }
     .main-text-container{
         border: 1px black solid;
@@ -111,6 +122,15 @@
     .col-header button{
         display:block;
         opacity:1;
+    }
+    #mobile-only-text{
+        display:block;
+        text-transform: uppercase;
+        color:#D10000;
+        text-align:center;
+        font-size:4vw;
+        padding:2vh 0;
+        font-weight: 500;
     }
     footer{
         display:block;

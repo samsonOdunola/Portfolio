@@ -97,6 +97,9 @@
         text-align:center;
         font-weight: 600;
     }
+    .column-container .explore-btn{
+        display:none;
+    }
     .column-container{
         display:block;        
         

@@ -55,39 +55,42 @@ mobileCloseButton.addEventListener("click", ()=>{
 
 
 for(var i=0; i<sectionHead.length; i++){    
-    sectionHead[i].addEventListener("click", function(){               
-        switch(this.id){
-            case "webDevHeader":                
-                appCol.style.display = "none"
-                webDesignHead.style.display = "none"
-                gsap.to("#uiuxDesigner",{y:-100, duration:0})
-                gsap.to("#subhead",{y:-110, duration:1})
-                gsap.to("#uiuxDesigner",{opacity:0,duration:0})                
-                subHeading.innerHTML = "Explore some of my projects."
-                gsap.to(".column-container",{marginTop:"1vh", y:-100, duration:1})
-                gsap.to("#backBtn",{display:"block"})
-                gsap.to("#backBtn",{display:"block"}) 
-                gsap.to(".summary",{opacity:0, display:"none"})
-                gsap.to(".col-header",{width:"90vw"})
-                gsap.to(".explore-btn",{display:"none"})
-                gsap.to(rule,{cssRule:{display:"none"}})
-                gsap.to(".col-1",{width:"90vw"})  
-                gsap.to(".grid", {display:"flex"})
-                console.log("working")
-                break;
-            case "designerHeader":
-                appCol.style.display = "none"
-                WebDevHeader.style.display = "none"                
-                break; 
-            case "flutterDevHeader":
-                webDesignHead.style.display ="none"
-                WebDevHeader.style.display = "none"
-                break;
-        }   
-        gsap.to(".main-text-container",{marginTop:"1%", duration:0.5, ease:"power1.out"})  
-        gsap.to("#backBtn",{display:"block"})
-           
-                       
+    sectionHead[i].addEventListener("click", function(){ 
+        if(screen.width > 475){
+            gsap.to(".main-text-container",{marginTop:"1%", duration:0.5, ease:"power1.out"})  
+            gsap.to("#backBtn",{display:"block"})
+            switch(this.id){
+                case "webDevHeader":                
+                    appCol.style.display = "none"
+                    webDesignHead.style.display = "none"
+                    gsap.to("#uiuxDesigner",{y:-100, duration:0})
+                    gsap.to("#subhead",{y:-110, duration:1})
+                    gsap.to("#uiuxDesigner",{opacity:0,duration:0})                
+                    subHeading.innerHTML = "Explore some of my projects."
+                    gsap.to(".column-container",{marginTop:"1vh", y:-100, duration:1})
+                    gsap.to("#backBtn",{display:"block"})
+                    gsap.to("#backBtn",{display:"block"}) 
+                    gsap.to(".summary",{opacity:0, display:"none"})
+                    gsap.to(".col-header",{width:"90vw"})
+                    gsap.to(".explore-btn",{display:"none"})
+                    gsap.to(rule,{cssRule:{display:"none"}})
+                    gsap.to(".col-1",{width:"90vw"})  
+                    gsap.to(".grid", {display:"flex"})
+                    console.log("working")
+                    break;
+                case "designerHeader":
+                    appCol.style.display = "none"
+                    WebDevHeader.style.display = "none"                
+                    break; 
+                case "flutterDevHeader":
+                    webDesignHead.style.display ="none"
+                    WebDevHeader.style.display = "none"
+                    break;
+            }   
+
+        }else{
+
+        }            
     })    
 };
 mobileBio.addEventListener("click", ()=>{    
@@ -118,6 +121,8 @@ mobileContact.addEventListener("click", ()=>{
         contactContent.style.display="block"
     }
 })
+let width = screen.width;
+console.log(width)
 
 
 
